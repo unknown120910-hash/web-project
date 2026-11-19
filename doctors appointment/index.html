@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My doctor's appointment</title>
+</head>
+<body>
+    <h1>My doctor's appointment</h1>
+    <p> complete the form below to schedule your appointment </p>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Patient Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Appointment Details</legend>
+            <label> select your specialist</label><br>
+            <select id="doctor">
+                <option value="general">General Practitioner</option>
+                <option value="dermatologist">Dermatologist</option>
+                <option value="cardiologist">Cardiologist</option>
+            </select><br><br>
+            <label> what is bothering you?</label><br>
+            <input type="radio" name="reason" value="headache"> Headache<br>
+            <input type="radio" name="reason" value="skin"> Skin Issue<br>
+            <input type="radio" name="reason" value="heart"> Heart Problem<br><br>
+            <label for="description">Describe your symptoms:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Preferred Appointment day</legend>
+            <input type="checkbox" value="monday" name="day"> Monday<br>
+            <input type="checkbox" value="tuesday" name="day"> Tuesday<br>
+            <input type="checkbox" value="wednesday" name="day"> Wednesday<br>
+
+        </fieldset>
+        <br>
+        <input type="submit" value="schedule my appointment">
+    </form>
+</body>
+
